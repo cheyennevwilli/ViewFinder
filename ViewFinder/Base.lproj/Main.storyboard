@@ -90,7 +90,7 @@
                                 <rect key="frame" x="400" y="752" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
-                                    <action selector="saveButtonTapped:" destination="qWP-Og-CHU" eventType="touchUpInside" id="AsS-3G-yBU"/>
+                                    <action selector="saveButtonTapped:" destination="qWP-Og-CHU" eventType="touchUpInside" id="7Er-ni-kDw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -113,8 +113,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="jdR-Uo-Kz8"/>
                     <connections>
-                        <outlet property="captionText" destination="qqk-rk-mbe" id="7NM-dO-n4V"/>
-                        <outlet property="newPhoto" destination="YAf-Vs-Bk3" id="3xW-1a-NVd"/>
+                        <outlet property="getText" destination="Vej-GP-WGq" id="q8c-6A-ea9"/>
                         <outlet property="photoField" destination="YAf-Vs-Bk3" id="UNo-ve-2I2"/>
                     </connections>
                 </viewController>
