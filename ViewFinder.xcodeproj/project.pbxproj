@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C713D75422BEB67800243E51 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C713D75322BEB67800243E51 /* AddPhotoViewController.swift */; };
 		C7FC63A122BE98D8005C3D74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FC63A022BE98D8005C3D74 /* AppDelegate.swift */; };
 		C7FC63A622BE98D8005C3D74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FC63A422BE98D8005C3D74 /* Main.storyboard */; };
 		C7FC63A922BE98D8005C3D74 /* ViewFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7FC63A722BE98D8005C3D74 /* ViewFinder.xcdatamodeld */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C713D75322BEB67800243E51 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 		C7FC639D22BE98D8005C3D74 /* ViewFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FC63A022BE98D8005C3D74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7FC63A522BE98D8005C3D74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				C7FC63A022BE98D8005C3D74 /* AppDelegate.swift */,
 				C7FC63A422BE98D8005C3D74 /* Main.storyboard */,
+				C713D75322BEB67800243E51 /* AddPhotoViewController.swift */,
 				C7FC63AA22BE98D9005C3D74 /* Assets.xcassets */,
 				C7FC63AC22BE98D9005C3D74 /* LaunchScreen.storyboard */,
 				C7FC63AF22BE98D9005C3D74 /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7FC63A922BE98D8005C3D74 /* ViewFinder.xcdatamodeld in Sources */,
+				C713D75422BEB67800243E51 /* AddPhotoViewController.swift in Sources */,
 				C7FC63A122BE98D8005C3D74 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.expamle.ViewFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -310,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.expamle.ViewFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

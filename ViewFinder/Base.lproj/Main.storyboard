@@ -51,7 +51,7 @@
         <!--Add New Photo-->
         <scene sceneID="3WX-c2-Jhs">
             <objects>
-                <viewController id="qWP-Og-CHU" sceneMemberID="viewController">
+                <viewController id="qWP-Og-CHU" customClass="AddPhotoViewController" customModule="ViewFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qqk-rk-mbe">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,10 +59,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAK-wV-Xvr">
                                 <rect key="frame" x="30" y="100" width="774" height="30"/>
                                 <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="CameraButtonSelected:" destination="qWP-Og-CHU" eventType="touchUpInside" id="8yk-hk-yCM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efq-Rt-0hb">
                                 <rect key="frame" x="30" y="130" width="774" height="30"/>
                                 <state key="normal" title="Photo Library"/>
+                                <connections>
+                                    <action selector="LibraryButtonSelected:" destination="qWP-Og-CHU" eventType="touchUpInside" id="P79-cw-Unu"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UNADJUSTEDNONRAW_thumb_2b2" translatesAutoresizingMaskIntoConstraints="NO" id="YAf-Vs-Bk3">
                                 <rect key="frame" x="267" y="406" width="300" height="300"/>
@@ -103,6 +109,10 @@
                         <viewLayoutGuide key="safeArea" id="uwg-1H-bD9"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="jdR-Uo-Kz8"/>
+                    <connections>
+                        <outlet property="newPhoto" destination="YAf-Vs-Bk3" id="3xW-1a-NVd"/>
+                        <outlet property="photoField" destination="YAf-Vs-Bk3" id="UNo-ve-2I2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8YO-Ot-xLm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
