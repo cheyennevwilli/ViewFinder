@@ -13,7 +13,7 @@
         <!--ViewFinder-->
         <scene sceneID="LRW-ov-Dyx">
             <objects>
-                <tableViewController id="H3T-7O-baN" sceneMemberID="viewController">
+                <tableViewController id="H3T-7O-baN" customClass="PhotoTableTableViewController" customModule="ViewFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Mn-ZF-ybo">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,6 +89,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7I-G5-Tqw">
                                 <rect key="frame" x="400" y="752" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="qWP-Og-CHU" eventType="touchUpInside" id="AsS-3G-yBU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -110,6 +113,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="jdR-Uo-Kz8"/>
                     <connections>
+                        <outlet property="captionText" destination="qqk-rk-mbe" id="7NM-dO-n4V"/>
                         <outlet property="newPhoto" destination="YAf-Vs-Bk3" id="3xW-1a-NVd"/>
                         <outlet property="photoField" destination="YAf-Vs-Bk3" id="UNo-ve-2I2"/>
                     </connections>

@@ -41,5 +41,62 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
         //go back to our ViewController so the user can see the update
         photo.dismiss(animated: true, completion: nil)
     }
+    @IBOutlet var captionText: UIView!
     
+    
+    
+    @IBAction func saveButtonTapped(_ sender: UIButton) {
+        
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+        }
+        
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            
+            let photoToSave = Photos(entity: Photos.entity(), insertInto: context)
+        }
+        
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            
+            let photoToSave = Photos(entity: Photos.entity(), insertInto: context)
+            
+            photoToSave.caption = captionText.text
+        }
+        
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            
+            let photoToSave = Photos(entity: Photos.entity(), insertInto: context)
+            
+            photoToSave.caption = captionText.text
+            
+            if let userImage = newImageView.image {
+                
+                if let userImageData = UIImagePNGRepresentation(userImage) {
+                    photoToSave.imageData = userImageData
+                }
+            }
+            (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        }
+        
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            
+            let photoToSave = Photos(entity: Photos.entity(), insertInto: context)
+            
+            photoToSave.caption = captionText.text
+            
+            if let userImage = newImageView.image {
+                
+                if let userImageData = UIImagePNGRepresentation(userImage) {
+                    photoToSave.imageData = userImageData
+                }
+            }
+            (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+            
+            navigationController?.popViewController(animated: true)
+        }
+        
+        
+        
+        
+        
+    }
 }
